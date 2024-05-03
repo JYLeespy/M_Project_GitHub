@@ -62,7 +62,7 @@ v='''
 Version 2024-05-03
 Git Hub 연동 하였음
 Commit Test 3 - git pull 명령어 이 후ㅌ
-123
+123123
 '''
 print(v)
 
