@@ -1,0 +1,5 @@
++이미지서치+이미지서치+Search+0.9+H:\archiving folder\이진영 (임시폴더)\새 폴더\검색창.png
++마우스+좌클릭+%Search+%Search+0+0+None+None
++대기+대기+1000
++키보드+키입력+오늘 구미 날씨
++키보드+단축키+Enter

@@ -1,0 +1,1256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>884</width>
+    <height>591</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <widget class="QFrame" name="frame_3">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;AVI&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QProgressBar" name="progressBar">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QProgressBar{background-color: rgb(98, 114, 164);
+color:rgb(200,200,200);
+border-style: none;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;}
+QProgressBar::chunk{border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+background-color: qlineargradient(spread:pad, x1:0, y1:0.511364, x2:1, y2:0.523, stop:0 rgba(254, 121, 199, 255), stop:1 rgba(170, 85, 255, 255));}</string>
+         </property>
+         <property name="value">
+          <number>0</number>
+         </property>
+         <property name="textVisible">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_ultra">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: rgb(255, 170, 255)</string>
+         </property>
+         <property name="text">
+          <string>Mode</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>11111111</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>파일</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>파일주소</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="line_path"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_openfile">
+         <property name="text">
+          <string>열기</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>300</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>300</height>
+       </size>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QGroupBox" name="groupBox_4">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>200</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>항목</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QListWidget" name="list_category">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_5">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QGroupBox" name="groupBox_2">
+            <property name="title">
+             <string>선택 항목 세부사항</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <widget class="QLabel" name="label_spec">
+               <property name="text">
+                <string>Nominal : </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_usl">
+               <property name="text">
+                <string>USL : </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_lsl">
+               <property name="text">
+                <string>LSL : </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_type">
+               <property name="text">
+                <string>TYPE :</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_unit">
+               <property name="text">
+                <string>Unit : </string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_28">
+            <property name="title">
+             <string>완료 후 설정</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_10">
+             <item>
+              <widget class="QCheckBox" name="check_setting_openfolder">
+               <property name="text">
+                <string>폴더 열기</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="check_setting_imageshow">
+               <property name="text">
+                <string>결과 보기</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="check_setting_saveauto">
+               <property name="text">
+                <string>자동 저장</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_3">
+            <property name="title">
+             <string>항목 편집</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <widget class="QPushButton" name="btn_open_settings">
+               <property name="text">
+                <string>파일 열기</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_6">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>스타일 설정</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_9">
+          <item>
+           <widget class="QGroupBox" name="groupBox_7">
+            <property name="title">
+             <string>Nomianl</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QGroupBox" name="groupBox_11">
+               <property name="minimumSize">
+                <size>
+                 <width>150</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>150</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="title">
+                <string>선 종류</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_6">
+                <item>
+                 <widget class="QComboBox" name="combo_nominal_linestyle">
+                  <property name="currentIndex">
+                   <number>1</number>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>solid line style</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>dashed line style</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>dash-dot line style</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>dotted line style</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_9">
+               <property name="minimumSize">
+                <size>
+                 <width>80</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>80</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="title">
+                <string>색깔</string>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_7">
+                <item>
+                 <widget class="QComboBox" name="combo_nominal_color">
+                  <item>
+                   <property name="text">
+                    <string>검정색</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>빨강색</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>노랑색</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>파랑색</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>초록색</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>청록색</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>자홍색</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>흰색</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_8">
+               <property name="minimumSize">
+                <size>
+                 <width>80</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>80</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="title">
+                <string>선 두께</string>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_6">
+                <item>
+                 <widget class="QLineEdit" name="combo_nominal_width">
+                  <property name="text">
+                   <string>0.4</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_10">
+               <property name="title">
+                <string>마커</string>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_8">
+                <item>
+                 <widget class="QComboBox" name="combo_nominal_marker">
+                  <item>
+                   <property name="text">
+                    <string>None</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>point marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>pixel marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>circle marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>triangle_down marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>triangle_up marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>triangle_left marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>triangle_right marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>tri_down marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>tri_up marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>tri_left marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>tri_right marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>square marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>pentagon marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>star marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>hexagon1 marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>hexagon2 marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>plus marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>x marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>diamond marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>thin_diamond marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>vline marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>hline marker</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_15">
+            <property name="title">
+             <string>USL</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_17">
+             <item>
+              <widget class="QGroupBox" name="groupBox_19">
+               <property name="minimumSize">
+                <size>
+                 <width>150</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>150</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="title">
+                <string>선 종류</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_7">
+                <item>
+                 <widget class="QComboBox" name="combo_usl_linestyle">
+                  <property name="currentIndex">
+                   <number>1</number>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>solid line style</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>dashed line style</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>dash-dot line style</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>dotted line style</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_20">
+               <property name="minimumSize">
+                <size>
+                 <width>80</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>80</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="title">
+                <string>색깔</string>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_18">
+                <item>
+                 <widget class="QComboBox" name="combo_usl_color">
+                  <item>
+                   <property name="text">
+                    <string>검정색</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>빨강색</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>노랑색</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>파랑색</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>초록색</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>청록색</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>자홍색</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>흰색</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_21">
+               <property name="minimumSize">
+                <size>
+                 <width>80</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>80</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="title">
+                <string>선 두께</string>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_19">
+                <item>
+                 <widget class="QLineEdit" name="combo_usl_width">
+                  <property name="text">
+                   <string>0.2</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_22">
+               <property name="title">
+                <string>마커</string>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_20">
+                <item>
+                 <widget class="QComboBox" name="combo_usl_marker">
+                  <item>
+                   <property name="text">
+                    <string>None</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>point marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>pixel marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>circle marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>triangle_down marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>triangle_up marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>triangle_left marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>triangle_right marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>tri_down marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>tri_up marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>tri_left marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>tri_right marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>square marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>pentagon marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>star marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>hexagon1 marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>hexagon2 marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>plus marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>x marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>diamond marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>thin_diamond marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>vline marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>hline marker</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_23">
+            <property name="title">
+             <string>LSL</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_21">
+             <item>
+              <widget class="QGroupBox" name="groupBox_24">
+               <property name="minimumSize">
+                <size>
+                 <width>150</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>150</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="title">
+                <string>선 종류</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_8">
+                <item>
+                 <widget class="QComboBox" name="combo_lsl_linestyle">
+                  <property name="currentIndex">
+                   <number>1</number>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>solid line style</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>dashed line style</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>dash-dot line style</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>dotted line style</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_25">
+               <property name="minimumSize">
+                <size>
+                 <width>80</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>80</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="title">
+                <string>색깔</string>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_22">
+                <item>
+                 <widget class="QComboBox" name="combo_lsl_color">
+                  <item>
+                   <property name="text">
+                    <string>검정색</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>빨강색</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>노랑색</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>파랑색</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>초록색</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>청록색</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>자홍색</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>흰색</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_26">
+               <property name="minimumSize">
+                <size>
+                 <width>80</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>80</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="title">
+                <string>선 두께</string>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_23">
+                <item>
+                 <widget class="QLineEdit" name="combo_lsl_width">
+                  <property name="text">
+                   <string>0.2</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_27">
+               <property name="title">
+                <string>마커</string>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_24">
+                <item>
+                 <widget class="QComboBox" name="combo_lsl_marker">
+                  <item>
+                   <property name="text">
+                    <string>None</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>point marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>pixel marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>circle marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>triangle_down marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>triangle_up marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>triangle_left marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>triangle_right marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>tri_down marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>tri_up marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>tri_left marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>tri_right marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>square marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>pentagon marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>star marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>hexagon1 marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>hexagon2 marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>plus marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>x marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>diamond marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>thin_diamond marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>vline marker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>hline marker</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_run">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>그래프 그리기</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="title">
+       <string>System Message</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QListWidget" name="list_message"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

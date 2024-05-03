@@ -1,0 +1,25 @@
+<macro>
+  <Profile id="50,50이동하기">
+      <category>마우스</category>
+      <action>클릭</action>
+      <pos_xy>50,50</pos_xy>
+      <pos_offset_xy>0,0</pos_offset_xy>
+      <pos_drag_xy>0,0</pos_drag_xy>
+  </Profile>
+
+  <Profile id="100,150이동하기">
+      <category>마우스</category>
+      <action>이동</action>
+      <pos_xy>150,150</pos_xy>
+      <pos_offset_xy>0,0</pos_offset_xy>
+      <pos_drag_xy>0,0</pos_drag_xy>
+  </Profile>
+
+  <Profile id="키보드 입력">
+      <category>키보드</category>
+      <action>키입력</action>
+      <keys>안녕하세요?</keys>
+  </Profile>
+
+</macro>
+
