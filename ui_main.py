@@ -61,8 +61,10 @@ import time
 v='''
 Version 2024-05-03
 Git Hub 연동 하였음
-Commit Test 3 - git pull 명령어 이 후ㅌ
-123123
+
+-Pushing 이 진행중(무한로딩) 일때는 커밋도 안되는구나.
+Commit을 다시 한 번 마지막으로 파이참에서 보내기
+
 '''
 print(v)
 
